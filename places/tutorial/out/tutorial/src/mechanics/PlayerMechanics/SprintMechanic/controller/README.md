@@ -1,0 +1,1 @@
+Stamina-Based Combat Mechanic: This mechanic ensures each move is strategic and risks must be carefully weighed. Removing or altering this would fundamentally change the combat to possibly a button-mashing style, significantly lowering the difficulty and depth of combat.

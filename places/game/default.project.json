@@ -1,0 +1,374 @@
+{
+	"name": "the-yeti-of-mount-everest-game",
+	"globIgnorePaths": [
+		"**/package.json",
+		"**/tsconfig.json"
+	],
+	"tree": {
+		"$className": "DataModel",
+		"ServerScriptService": {
+			"$className": "ServerScriptService",
+			"TS": {
+				"$path": "out/game/src/server"
+			},
+			"SystemServices": {
+				"$className": "Folder",
+				"TaskSystem": {
+					"$path": "out/game/src/systems/TaskSystem/services"
+				},
+				"GameFlowSystem": {
+					"$path": "out/game/src/systems/GameFlowSystem/services"
+				},
+				"MusicSystem": {
+					"$path": "out/game/src/systems/AudioSystem/MusicSystem/services"
+				},
+				"AnimationSystem": {
+					"$path": "out/game/src/systems/AnimationSystem/services"
+				},
+				"InventorySystem": {
+					"$path": "out/game/src/systems/InventorySystem/services"
+				},
+				"DayNightSystem": {
+					"$path": "out/game/src/systems/EnvironmentSystem/TimeSystem/DayNightSystem/services"
+				},
+				"AtmosphereSystem": {
+					"$path": "out/game/src/systems/EnvironmentSystem/TimeSystem/AtmosphereSystem/services"
+				},
+				"ProgressionSystem": {
+					"$className": "Folder",
+					"ElevationSystem": {
+                        "$path": "out/game/src/systems/ProgressionSystem/ElevationSystem/services"
+                    },
+					"ActivitySystem": {
+                        "$path": "out/game/src/systems/ProgressionSystem/ActivitySystem/services"
+                    }
+				},
+				"LevelSystem": {
+					"$path": "out/game/src/systems/LevelSystem/services"
+				},
+				"AISystem": {
+					"$path": "out/game/src/systems/AISystem/services"
+				},
+				"ProfessionSystem": {
+					"$path": "out/game/src/systems/ProfessionSystem/services"
+				},
+				"MatchMakingSystem": {
+					"$path": "out/game/src/systems/MatchMakingSystem/services"
+				},
+				"CraftingSystem": {
+					"$path": "out/game/src/systems/CraftingSystem/services"
+				},
+				"BadgeSystem": {
+					"$path": "out/game/src/systems/BadgeSystem/services"
+				}
+			},
+			"MechanicServices": {
+				"$className": "Folder",
+				"RespawnMechanic": {
+					"$path": "out/game/src/mechanics/PlayerMechanics/RespawnMechanic/services"
+				},
+				"SanityMechanic": {
+					"$path": "out/game/src/mechanics/PlayerMechanics/_Prototype/SanityMechanic/services"
+				},
+				"StealthMechanic": {
+					"$path": "out/game/src/mechanics/PlayerMechanics/StealthMechanic/services"
+				},
+				"DeathMechanic": {
+					"$path": "out/game/src/mechanics/PlayerMechanics/DeathMechanic/services"
+				},
+				"ProfileServiceMechanic": {
+					"$path": "out/game/src/mechanics/PlayerMechanics/ProfileServiceMechanic/services"
+				},
+				"PartyMechanic": {
+					"$path": "out/game/src/mechanics/PlayerMechanics/PartyMechanic/services"
+				}
+			},
+
+			"Entities": {
+				"$className": "Folder",
+				"GateStructure": {
+					"$path": "out/game/src/entities/Structures/Gate/services"
+				},
+				"LadderStructure": {
+					"$path": "out/game/src/entities/Structures/Ladder/services"
+				},
+				"ExitPortalStruture": {
+					"$path": "out/game/src/entities/Structures/ExitPortal/services"
+				},
+				"IronWoodResource": {
+					"$path": "out/game/src/entities/Resources/IronWood/services"
+				},
+				"EldritchStoneResource": {
+					"$path": "out/game/src/entities/Resources/EldritchStone/services"
+				},
+				"HumanMeatResource": {
+					"$path": "out/game/src/entities/Resources/HumanMeat/services"
+				},
+				"CrateResource": {
+					"$path": "out/game/src/entities/Resources/Crate/services"
+				},
+				"ChestResource": {
+					"$path": "out/game/src/entities/Resources/Chest/services"
+				},
+				"AxeTool": {
+					"$path": "out/game/src/entities/Tools/Axe/services"
+				},
+				"PickaxeTool": {
+					"$path": "out/game/src/entities/Tools/Pickaxe/services"
+				},
+				"CanteenTool": {
+					"$path": "out/game/src/entities/Tools/Canteen/services"
+				}
+
+			}
+		},
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+			"rbxts_include": {
+				"$path": "include",
+				"node_modules": {
+					"$path": "../../node_modules/@rbxts",
+					"@flamework": {
+						"$path": "../../node_modules/@flamework"
+					},
+					"@caslabs": {
+						"$path": "../../node_modules/@caslabs"
+					}
+				}
+			},
+			"caslabs": {
+				"$path": "../../node_modules/@caslabs"
+			},
+			"TS": {
+				"$path": "out/game/src/shared"
+			},
+			"common": {
+				"$path": "out/common/src/shared"
+			},
+			"SystemsManager": {
+				"$className": "Folder",
+				"TaskSystem": {
+					"$path": "out/game/src/systems/TaskSystem/manager"
+				},
+				"SoundSystem": {
+					"$path": "out/game/src/systems/AudioSystem/SoundSystem/manager"
+				},
+				"MusicSystem": {
+					"$path": "out/game/src/systems/AudioSystem/MusicSystem/manager"
+				},
+				"AnimationSytem": {
+					"$path": "out/game/src/systems/AnimationSystem/manager"
+				},
+				"DialogueSystem": {
+					"$path": "out/game/src/systems/NarrartiveSystem/DialogueSystem/manager"
+				},
+				"LevelSystem": {
+					"$path": "out/game/src/systems/LevelSystem/manager"
+				},
+				"WorldBuildingSystem": {
+					"$path": "out/game/src/systems/NarrartiveSystem/WorldBuildingSystem/WorldData"
+				}
+			},
+			"MechanicsManager": {
+				"$className": "Folder",
+				"SanityMechanic": {
+					"$path": "out/game/src/mechanics/PlayerMechanics/_Prototype/SanityMechanic/manager"
+				},
+				"NotificationsManager": {
+					"$path": "out/game/src/mechanics/PlayerMechanics/UIMechanic/manager"
+			}
+		},
+		"Weather": {
+			"$path": "../../assets/weather.rbxm"
+		}
+		},
+		"StarterPlayer": {
+			"$className": "StarterPlayer",
+			"StarterPlayerScripts": {
+				"$className": "StarterPlayerScripts",
+				"TS": {
+					"$path": "out/game/src/client"
+				},
+				"ui": {
+					"$path": "out/game/src/ui"
+				},
+				"CutsceneScreens": {
+					"$className": "Folder",
+					"Introduction": {
+						"$path": "out/game/src/systems/NarrartiveSystem/CutsceneSystem/scenes/introduction-scene"
+					}
+				},
+				"ActivityScreens": {
+					"$path": "out/game/src/systems/ProgressionSystem/ActivitySystem/screens/"
+				},
+				"MechanicsController": {
+					"$className": "Folder",
+					"PlayerMechanics": {
+						"$className": "Folder",
+						"CharacterMechanic": {
+							"$path": "out/game/src/mechanics/PlayerMechanics/CharacterMechanic/controller"
+						},
+						"ResourceMechanic": {
+							"$path": "out/game/src/mechanics/PlayerMechanics/ResourceMechanic/controller"
+						},
+						"StealthMechanic": {
+							"$path": "out/game/src/mechanics/PlayerMechanics/StealthMechanic/controller"
+						},
+						"LifeMechanic": {
+							"$path": "out/game/src/mechanics/PlayerMechanics/LifeMechanic/controller"
+						},
+						"RespawnMechanic": {
+							"$path": "out/game/src/mechanics/PlayerMechanics/RespawnMechanic/controller"
+						},
+						"UIMechanic": {
+							"$path": "out/game/src/mechanics/PlayerMechanics/UIMechanic/controller"
+						},
+						"CameraMechanic": {
+							"$path": "out/game/src/mechanics/PlayerMechanics/CameraMechanic/controller"
+						},
+						"SelfDamageMechanic": {
+							"$path": "out/game/src/mechanics/PlayerMechanics/_Prototype/SelfDamageMechanic/controller"
+						},
+						"SanityMechanic": {
+							"$path": "out/game/src/mechanics/PlayerMechanics/_Prototype/SanityMechanic/controller"
+						},
+						"DeathMechanic": {
+							"$path": "out/game/src/mechanics/PlayerMechanics/DeathMechanic/controller"
+						},
+						"SettingMechanic": {
+							"$path": "out/game/src/mechanics/PlayerMechanics/SettingMechanic/controller"
+						},
+						"ClassMechanic": {
+							"$className": "Folder"
+						}
+					}
+				},
+				"EntitiesController": {
+					"$className": "Folder",
+					"ExitPortalStructure": {
+						"$path": "out/game/src/entities/Structures/ExitPortal/controller"
+					},
+					"AxeTool": {
+						"$path": "out/game/src/entities/Tools/Axe/controller"
+					},
+					"PickaxeTool": {
+						"$path": "out/game/src/entities/Tools/Pickaxe/controller"
+					},
+					"CanteenTool": {
+						"$path": "out/game/src/entities/Tools/Canteen/controller"
+					}
+				},
+				"SystemsController": {
+					"$className": "Folder",
+					"TaskSystem": {
+						"$path": "out/game/src/systems/TaskSystem/controller"
+					},
+					"GameFlowSystem": {
+						"$path": "out/game/src/systems/GameFlowSystem/controller"
+					},
+					"MusicSystem": {
+						"$path": "out/game/src/systems/AudioSystem/MusicSystem/controller"
+					},
+					"AnimationSystem": {
+						"$path": "out/game/src/systems/AnimationSystem/controller"
+					},
+					"SoundSystem": {
+						"$path": "out/game/src/systems/AudioSystem/SoundSystem/controller"
+					},
+					"ProgressionSystem": {
+						"$className": "Folder",
+						"ElevationSystem": {
+							"$path": "out/game/src/systems/ProgressionSystem/ElevationSystem/controller"
+						},
+						"ActivitySystem": {
+							"$path": "out/game/src/systems/ProgressionSystem/ActivitySystem/controller"
+						}
+					},
+					"LevelSystem": {
+						"$path": "out/game/src/systems/LevelSystem/controller"
+					},
+					"WeatherSystem": {
+						"$path": "out/game/src/systems/EnvironmentSystem/TimeSystem/WeatherSystem/controller"
+					},
+					"ProfessionSystem": {
+						"$path": "out/game/src/systems/ProfessionSystem/controller"
+					},
+					"MatchMakingSystem": {
+						"$path": "out/game/src/systems/MatchMakingSystem/controller"
+					},
+					"DayNightSystem": {
+						"$path": "out/game/src/systems/EnvironmentSystem/TimeSystem/DayNightSystem/controller"
+					},
+					"CraftingSystem": {
+						"$path": "out/game/src/systems/CraftingSystem/controller"
+					}
+				},
+				"SystemsComponents": {
+					"$className": "Folder",
+					"DialogueComponent": {
+						"$path": "out/game/src/systems/NarrartiveSystem/DialogueSystem/components"
+					},
+					"NPCComponent": {
+						"$path": "out/game/src/systems/NarrartiveSystem/CharacterSystem/NPCSystem/components"
+					},
+					"EventComponent": {
+						"$path": "out/game/src/systems/LevelSystem/components"
+					},
+					"AIComponent": {
+						"$path": "out/game/src/systems/AISystem/components"
+					}
+				}
+			}
+		},
+		"ReplicatedFirst": {
+			"$className": "ReplicatedFirst",
+			"$path": "out/game/src/ui/prototype"
+		},
+		"Workspace": {
+			"$properties": {
+			  "FilteringEnabled": true
+			},
+			"TutorialNode": {
+				"$path": "../../assets/tutorialNode.rbxm"
+			}
+		  },
+		"ServerStorage": {
+			"ENEMY_AI": {
+				"$path": "../../assets/enemyAI.rbxm"
+			},
+			"LevelSegment": {
+				"$path": "../../assets/LevelSegment.rbxm"
+			}
+		},
+		"HttpService": {
+			"$className": "HttpService",
+			"$properties": {
+				"HttpEnabled": true
+			}
+		},
+		"SoundService": {
+			"$className": "SoundService",
+			"$properties": {
+				"RespectFilteringEnabled": true
+			}
+		},
+		"Lighting": {
+			"$className": "Lighting",
+			"Atmosphere": {
+				"$path": "../../assets/atmosphere.rbxm"
+			},
+			"Sky": {
+				"$path": "../../assets/sky.rbxm"
+			},
+			"BloomEffect": {
+				"$path": "../../assets/bloom.rbxm"
+			},
+			"DepthOfFieldEffect": {
+				"$path": "../../assets/depth-of-field.rbxm"
+			},
+			"SunRaysEffect": {
+				"$path": "../../assets/sun-ray.rbxm"
+			}
+		}
+	}
+}

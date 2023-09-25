@@ -1,0 +1,1 @@
+Narraritive API allows to interact and manages the narraritive element within our games. This includes managing Cutscenes, Dialogues, and defines the Characters of the game to which can be interacted with other systems found in the game

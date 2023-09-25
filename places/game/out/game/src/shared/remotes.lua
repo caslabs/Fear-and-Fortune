@@ -1,0 +1,53 @@
+-- Compiled with roblox-ts v1.3.3
+local TS = require(game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("RuntimeLib"))
+local Net = TS.import(script, TS.getModule(script, "@rbxts", "net").out)
+-- TODO: Prototype
+local Remotes = Net.CreateDefinitions({
+	SendMessage = Net.Definitions.ServerToClientEvent(),
+	DamagePlayer = Net.Definitions.ServerToClientEvent(),
+	IsCrouching = Net.Definitions.ClientToServerEvent(),
+	PlayLocalSound = Net.Definitions.ServerToClientEvent(),
+	StopLocalSound = Net.Definitions.ServerToClientEvent(),
+	ToggleRespawn = Net.Definitions.ClientToServerEvent(),
+	PlayMusic = Net.Definitions.ServerToClientEvent(),
+	RequestMusicPlay = Net.Definitions.ClientToServerEvent(),
+	DecreaseSanityEvent = Net.Definitions.ClientToServerEvent(),
+	UpdateSanityEvent = Net.Definitions.ServerToClientEvent(),
+	StopJumpScareZoom = Net.Definitions.ServerToClientEvent(),
+	PlayJumpScareZoom = Net.Definitions.ServerToClientEvent(),
+	PlayGunShake = Net.Definitions.ServerToClientEvent(),
+	CompleteObjectiveEvent = Net.Definitions.ServerAsyncFunction(),
+	UpdateElevationEvent = Net.Definitions.ServerToClientEvent(),
+	PlayerLocationEvent = Net.Definitions.ServerToClientEvent(),
+	UpdateInventory = Net.Definitions.ServerToClientEvent(),
+	AddItemToAllInventories = Net.Definitions.ClientToServerEvent(),
+	AddItemToInventory = Net.Definitions.ClientToServerEvent(),
+	RequestAddItemToAllInventories = Net.Definitions.ClientToServerEvent(),
+	RequestRemoveItemFromAllInventories = Net.Definitions.ServerToClientEvent(),
+	DropItemFromInventory = Net.Definitions.ClientToServerEvent(),
+	EquipItemFromInventory = Net.Definitions.ClientToServerEvent(),
+	CheckCraftingIngredients = Net.Definitions.ClientToServerEvent(),
+	SpawnAI = Net.Definitions.ServerToClientEvent(),
+	RequestSpawnAI = Net.Definitions.ClientToServerEvent(),
+	StartChasingShake = Net.Definitions.ServerToClientEvent(),
+	StopChasingShake = Net.Definitions.ServerToClientEvent(),
+	SetPlayerClass = Net.Definitions.ClientToServerEvent(),
+	GetPlayerClass = Net.Definitions.ServerAsyncFunction(),
+	UpdatePlayerClass = Net.Definitions.ServerToClientEvent(),
+	PlayerDeathEvent = Net.Definitions.ServerToClientEvent(),
+	PlayerDeathSurvival = Net.Definitions.ClientToServerEvent(),
+	ExtractToLobby = Net.Definitions.ClientToServerEvent(),
+	IsExtracted = Net.Definitions.ClientToServerEvent(),
+	UpdateExpeditionCount = Net.Definitions.ClientToServerEvent(),
+	_SpawnBehindPlayer = Net.Definitions.ClientToServerEvent(),
+	ToolPickupEvent = Net.Definitions.ServerToClientEvent(),
+	ToolRemovedEvent = Net.Definitions.ServerToClientEvent(),
+	UpdateAmmoEvent = Net.Definitions.ServerToClientEvent(),
+	AddThirst = Net.Definitions.ServerToClientEvent(),
+	AddHunger = Net.Definitions.ServerToClientEvent(),
+	AddExposure = Net.Definitions.ServerToClientEvent(),
+})
+local default = Remotes
+return {
+	default = default,
+}

@@ -1,0 +1,1 @@
+The Progression system are any progresisonal mechanics that are found within the game. Either Core progressions such as a Story Tree or a Task System, or secondary progressions such as an player experience systems, or Leveling.

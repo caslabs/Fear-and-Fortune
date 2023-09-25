@@ -1,0 +1,1 @@
+AISystem creates and manages the state of the AI system. It adheres the principle of Blackboard Arhcitecture, where each individual AI entities are hooked up onto a "Blackboard" system, to manage and manipulate the behavior of the AI entities more closely

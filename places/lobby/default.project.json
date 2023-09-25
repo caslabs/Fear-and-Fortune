@@ -1,0 +1,216 @@
+{
+	"name": "the-yeti-of-mount-everest-lobby",
+	"globIgnorePaths": [
+		"**/package.json",
+		"**/tsconfig.json"
+	],
+	"tree": {
+		"$className": "DataModel",
+		"ServerScriptService": {
+			"$className": "ServerScriptService",
+			"TS": {
+				"$path": "out/lobby/src/server"
+			},
+			"SystemServices": {
+				"$className": "Folder",
+				"GameFlowSystem": {
+					"$path": "out/lobby/src/systems/GameFlowSystem/services"
+				},
+				"MusicSystem": {
+					"$path": "out/lobby/src/systems/AudioSystem/MusicSystem/services"
+				},
+				"MatchMakingSystem": {
+					"$path": "out/lobby/src/systems/MatchMakingSystem/services"
+				},
+				"ProfessionsSystem": {
+					"$path": "out/lobby/src/systems/ProfessionSystem/services"
+				},
+				"InventorySystem": {
+					"$path": "out/lobby/src/systems/InventorySystem/services"
+				},
+				"TwitterSystem": {
+					"$path": "out/lobby/src/systems/MetaSystem/TwitterSystem/services"
+				},
+				"LeaderboardSystem": {
+					"$path": "out/lobby/src/systems/MetaSystem/LeaderboardSystem/services"
+				},
+				"BadgeSystem": {
+					"$path": "out/lobby/src/systems/BadgeSystem/services"
+				}
+			},
+			"PlayerMechanics": {
+				"$className": "Folder",
+				"ProfileService": {
+					"$path": "out/lobby/src/mechanics/PlayerMechanics/ProfileServiceMechanic/services"
+				},
+				"CurrencyMechanic": {
+					"$path": "out/lobby/src/mechanics/PlayerMechanics/CurrencyMechanic/services"
+				},
+				"ProfessionMechanic": {
+					"$path": "out/lobby/src/mechanics/PlayerMechanics/ProfessionMechanic/services"
+				},
+				"TradeMechanic": {
+					"$path": "out/lobby/src/mechanics/PlayerMechanics/TradeMechanic/services"
+				}
+			},
+			"Entities": {
+				"$className": "Folder",
+				"GateStructure": {
+					"$path": "out/lobby/src/entities/Structures/Gate/services"
+				}
+			}
+		},
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+			"rbxts_include": {
+				"$path": "include",
+				"node_modules": {
+					"$path": "../../node_modules/@rbxts",
+					"@flamework": {
+						"$path": "../../node_modules/@flamework"
+					},
+					"@caslabs": {
+						"$path": "../../node_modules/@caslabs"
+					}
+				}
+			},
+			"caslabs": {
+				"$path": "../../node_modules/@caslabs"
+			},
+			"TS": {
+				"$path": "out/lobby/src/shared"
+			},
+			"common": {
+				"$path": "out/common/src/shared"
+			},
+			"SystemsManager": {
+				"$className": "Folder",
+				"SoundSystem": {
+					"$path": "out/lobby/src/systems/AudioSystem/SoundSystem/manager"
+				},
+				"MusicSystem": {
+					"$path": "out/lobby/src/systems/AudioSystem/MusicSystem/manager"
+				}
+			},
+			"MechanicsManager": {
+				"$className": "Folder",
+				"NotificationsManager": {
+					"$path": "out/lobby/src/mechanics/PlayerMechanics/UIMechanic/manager"
+			}
+		},
+		"Weather": {
+			"$path": "../../assets/weather.rbxm"
+		}
+		},
+		"StarterPlayer": {
+			"$className": "StarterPlayer",
+			"StarterPlayerScripts": {
+				"$className": "StarterPlayerScripts",
+				"TS": {
+					"$path": "out/lobby/src/client"
+				},
+				"ui": {
+					"$path": "out/lobby/src/ui"
+				},
+				"MechanicsController": {
+					"$className": "Folder",
+					"PlayerMechanics": {
+						"$className": "Folder",
+						"CharacterMechanic": {
+							"$path": "out/lobby/src/mechanics/PlayerMechanics/CharacterMechanic/controller"
+						},
+						"UIMechanic": {
+							"$path": "out/lobby/src/mechanics/PlayerMechanics/UIMechanic/controller"
+						},
+						"CameraMechanic": {
+							"$path": "out/lobby/src/mechanics/PlayerMechanics/CameraMechanic/controller"
+						},
+						"CurrencyMechanic": {
+							"$path": "out/lobby/src/mechanics/PlayerMechanics/CurrencyMechanic/controller"
+						},
+						"TradeMechanic": {
+							"$path": "out/lobby/src/mechanics/PlayerMechanics/TradeMechanic/controller"
+						}
+					}
+				},
+				"SystemsController": {
+					"$className": "Folder",
+					"GameFlowSystem": {
+						"$path": "out/lobby/src/systems/GameFlowSystem/controller"
+					},
+					"MusicSystem": {
+						"$path": "out/lobby/src/systems/AudioSystem/MusicSystem/controller"
+					},
+					"SoundSystem": {
+						"$path": "out/lobby/src/systems/AudioSystem/SoundSystem/controller"
+					},
+					"MatchMakingSystem": {
+						"$path": "out/lobby/src/systems/MatchMakingSystem/controller"
+					},
+					"ProfessionsSystem": {
+						"$path": "out/lobby/src/systems/ProfessionSystem/controller"
+					},
+					"InventorySystem": {
+						"$path": "out/lobby/src/systems/InventorySystem/controller"
+					},
+					"TwitterSystem": {
+						"$path": "out/lobby/src/systems/MetaSystem/TwitterSystem/controller"
+					},
+					"LeaderboardSystem": {
+						"$path": "out/lobby/src/systems/MetaSystem/LeaderboardSystem/controller"
+					}
+				}
+			}
+		},
+		"ReplicatedFirst": {
+			"$className": "ReplicatedFirst",
+			"$path": "out/lobby/src/ui/prototype"
+		},
+		"Workspace": {
+			"$properties": {
+			  "FilteringEnabled": true
+			},
+			"TutorialNode": {
+				"$path": "../../assets/tutorialNode.rbxm"
+			}
+		  },
+		"ServerStorage": {
+			"ENEMY_AI": {
+				"$path": "../../assets/enemyAI.rbxm"
+			},
+			"LevelSegment": {
+				"$path": "../../assets/LevelSegment.rbxm"
+			}
+		},
+		"HttpService": {
+			"$className": "HttpService",
+			"$properties": {
+				"HttpEnabled": true
+			}
+		},
+		"SoundService": {
+			"$className": "SoundService",
+			"$properties": {
+				"RespectFilteringEnabled": true
+			}
+		},
+		"Lighting": {
+			"$className": "Lighting",
+			"Atmosphere": {
+				"$path": "../../assets/atmosphere.rbxm"
+			},
+			"Sky": {
+				"$path": "../../assets/sky.rbxm"
+			},
+			"BloomEffect": {
+				"$path": "../../assets/bloom.rbxm"
+			},
+			"DepthOfFieldEffect": {
+				"$path": "../../assets/depth-of-field.rbxm"
+			},
+			"SunRaysEffect": {
+				"$path": "../../assets/sun-ray.rbxm"
+			}
+		}
+	}
+}

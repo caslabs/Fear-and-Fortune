@@ -1,0 +1,356 @@
+{
+	"name": "the-yeti-of-mount-everest-tutorial",
+	"globIgnorePaths": [
+		"**/package.json",
+		"**/tsconfig.json"
+	],
+	"tree": {
+		"$className": "DataModel",
+		"ServerScriptService": {
+			"$className": "ServerScriptService",
+			"TS": {
+				"$path": "out/tutorial/src/server"
+			},
+			"SystemServices": {
+				"$className": "Folder",
+				"TaskSystem": {
+					"$path": "out/tutorial/src/systems/TaskSystem/services"
+				},
+				"GameFlowSystem": {
+					"$path": "out/tutorial/src/systems/GameFlowSystem/services"
+				},
+				"MusicSystem": {
+					"$path": "out/tutorial/src/systems/AudioSystem/MusicSystem/services"
+				},
+				"InventorySystem": {
+					"$path": "out/tutorial/src/systems/InventorySystem/services"
+				},
+				"DayNightSystem": {
+					"$path": "out/tutorial/src/systems/EnvironmentSystem/TimeSystem/DayNightSystem/services"
+				},
+				"AtmosphereSystem": {
+					"$path": "out/tutorial/src/systems/EnvironmentSystem/TimeSystem/AtmosphereSystem/services"
+				},
+				"ProgressionSystem": {
+					"$className": "Folder",
+					"ElevationSystem": {
+                        "$path": "out/tutorial/src/systems/ProgressionSystem/ElevationSystem/services"
+                    },
+					"ActivitySystem": {
+                        "$path": "out/tutorial/src/systems/ProgressionSystem/ActivitySystem/services"
+                    }
+				},
+				"LevelSystem": {
+					"$path": "out/tutorial/src/systems/LevelSystem/services"
+				},
+				"AISystem": {
+					"$path": "out/tutorial/src/systems/AISystem/services"
+				},
+				"ProfessionSystem": {
+					"$path": "out/tutorial/src/systems/ProfessionSystem/services"
+				},
+				"MatchMakingSystem": {
+					"$path": "out/tutorial/src/systems/MatchMakingSystem/services"
+				}
+			},
+
+			"MechanicServices": {
+				"$className": "Folder",
+				"RespawnMechanic": {
+					"$path": "out/tutorial/src/mechanics/PlayerMechanics/RespawnMechanic/services"
+				},
+				"SanityMechanic": {
+					"$path": "out/tutorial/src/mechanics/PlayerMechanics/_Prototype/SanityMechanic/services"
+				},
+				"DeathMechanic": {
+					"$path": "out/tutorial/src/mechanics/PlayerMechanics/DeathMechanic/services"
+				},
+				"ClassMechanic": {
+					"$className": "Folder",
+					"Classes": {
+						"$className": "Folder",
+						"Cameraman": {
+							"$path": "out/tutorial/src/mechanics/PlayerMechanics/ClassMechanic/Classes/Cameraman/services"
+						},
+						"Hunter": {
+							"$path": "out/tutorial/src/mechanics/PlayerMechanics/ClassMechanic/Classes/Hunter/services"
+						},
+						"Medic": {
+							"$path": "out/tutorial/src/mechanics/PlayerMechanics/ClassMechanic/Classes/Medic/services"
+						},
+						"Scientist": {
+							"$path": "out/tutorial/src/mechanics/PlayerMechanics/ClassMechanic/Classes/Scientist/services"
+						},
+						"Sherpa": {
+							"$path": "out/tutorial/src/mechanics/PlayerMechanics/ClassMechanic/Classes/Sherpa/services"
+						}
+                    }
+				}
+			},
+
+			"Entities": {
+				"$className": "Folder",
+				"GateStructure": {
+					"$path": "out/tutorial/src/entities/Structures/Gate/services"
+				},
+				"LadderStructure": {
+					"$path": "out/tutorial/src/entities/Structures/Ladder/services"
+				},
+				"IronWoodResource": {
+					"$path": "out/tutorial/src/entities/Resources/IronWood/services"
+				}
+			}
+		},
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+			"rbxts_include": {
+				"$path": "include",
+				"node_modules": {
+					"$path": "../../node_modules/@rbxts",
+					"@flamework": {
+						"$path": "../../node_modules/@flamework"
+					},
+					"@caslabs": {
+						"$path": "../../node_modules/@caslabs"
+					}
+				}
+			},
+			"caslabs": {
+				"$path": "../../node_modules/@caslabs"
+			},
+			"TS": {
+				"$path": "out/tutorial/src/shared"
+			},
+			"common": {
+				"$path": "out/common/src/shared"
+			},
+			"SystemsManager": {
+				"$className": "Folder",
+				"TaskSystem": {
+					"$path": "out/tutorial/src/systems/TaskSystem/manager"
+				},
+				"SoundSystem": {
+					"$path": "out/tutorial/src/systems/AudioSystem/SoundSystem/manager"
+				},
+				"MusicSystem": {
+					"$path": "out/tutorial/src/systems/AudioSystem/MusicSystem/manager"
+				},
+				"DialogueSystem": {
+					"$path": "out/tutorial/src/systems/NarrartiveSystem/DialogueSystem/manager"
+				},
+				"LevelSystem": {
+					"$path": "out/tutorial/src/systems/LevelSystem/manager"
+				},
+				"WorldBuildingSystem": {
+					"$path": "out/tutorial/src/systems/NarrartiveSystem/WorldBuildingSystem/WorldData"
+				}
+			},
+			"MechanicsManager": {
+				"$className": "Folder",
+				"SanityMechanic": {
+					"$path": "out/tutorial/src/mechanics/PlayerMechanics/_Prototype/SanityMechanic/manager"
+				},
+				"NotificationsManager": {
+					"$path": "out/tutorial/src/mechanics/PlayerMechanics/UIMechanic/manager"
+			}
+		},
+		"Weather": {
+			"$path": "../../assets/weather.rbxm"
+		}
+		},
+		"StarterPlayer": {
+			"$className": "StarterPlayer",
+			"StarterPlayerScripts": {
+				"$className": "StarterPlayerScripts",
+				"TS": {
+					"$path": "out/tutorial/src/client"
+				},
+				"ui": {
+					"$path": "out/tutorial/src/ui"
+				},
+				"CutsceneScreens": {
+					"$className": "Folder",
+					"Introduction": {
+						"$path": "out/tutorial/src/systems/NarrartiveSystem/CutsceneSystem/scenes/introduction-scene"
+					}
+				},
+				"ActivityScreens": {
+					"$path": "out/tutorial/src/systems/ProgressionSystem/ActivitySystem/screens/"
+				},
+				"ClassScreens": {
+					"$className": "Folder",
+					"Cameraman": {
+						"$path": "out/tutorial/src/mechanics/PlayerMechanics/ClassMechanic/Classes/Cameraman/screens"
+					},
+					"Hunter": {
+						"$path": "out/tutorial/src/mechanics/PlayerMechanics/ClassMechanic/Classes/Hunter/screens"
+					},
+					"Medic": {
+						"$path": "out/tutorial/src/mechanics/PlayerMechanics/ClassMechanic/Classes/Medic/screens"
+					},
+					"Scientist": {
+						"$path": "out/tutorial/src/mechanics/PlayerMechanics/ClassMechanic/Classes/Scientist/screens"
+					},
+					"Sherpa": {
+						"$path": "out/tutorial/src/mechanics/PlayerMechanics/ClassMechanic/Classes/Sherpa/screens"
+					}
+				},
+				"MechanicsController": {
+					"$className": "Folder",
+					"PlayerMechanics": {
+						"$className": "Folder",
+						"CharacterMechanic": {
+							"$path": "out/tutorial/src/mechanics/PlayerMechanics/CharacterMechanic/controller"
+						},
+						"SprintMechanic": {
+							"$path": "out/tutorial/src/mechanics/PlayerMechanics/SprintMechanic/controller"
+						},
+						"LifeMechanic": {
+							"$path": "out/tutorial/src/mechanics/PlayerMechanics/LifeMechanic/controller"
+						},
+						"RespawnMechanic": {
+							"$path": "out/tutorial/src/mechanics/PlayerMechanics/RespawnMechanic/controller"
+						},
+						"UIMechanic": {
+							"$path": "out/tutorial/src/mechanics/PlayerMechanics/UIMechanic/controller"
+						},
+						"CameraMechanic": {
+							"$path": "out/tutorial/src/mechanics/PlayerMechanics/CameraMechanic/controller"
+						},
+						"SelfDamageMechanic": {
+							"$path": "out/tutorial/src/mechanics/PlayerMechanics/_Prototype/SelfDamageMechanic/controller"
+						},
+						"SanityMechanic": {
+							"$path": "out/tutorial/src/mechanics/PlayerMechanics/_Prototype/SanityMechanic/controller"
+						},
+						"DeathMechanic": {
+							"$path": "out/tutorial/src/mechanics/PlayerMechanics/DeathMechanic/controller"
+						},
+						"ClassMechanic": {
+							"$className": "Folder",
+							"Classes": {
+								"$className": "Folder",
+								"Cameraman": {
+									"$path": "out/tutorial/src/mechanics/PlayerMechanics/ClassMechanic/Classes/Cameraman/controller"
+								},
+								"Hunter": {
+									"$path": "out/tutorial/src/mechanics/PlayerMechanics/ClassMechanic/Classes/Hunter/controller"
+								},
+								"Medic": {
+									"$path": "out/tutorial/src/mechanics/PlayerMechanics/ClassMechanic/Classes/Medic/controller"
+								},
+								"Scientist": {
+									"$path": "out/tutorial/src/mechanics/PlayerMechanics/ClassMechanic/Classes/Scientist/controller"
+								},
+								"Sherpa": {
+									"$path": "out/tutorial/src/mechanics/PlayerMechanics/ClassMechanic/Classes/Sherpa/controller"
+								}
+							}
+						}
+					}
+				},
+				"SystemsController": {
+					"$className": "Folder",
+					"TaskSystem": {
+						"$path": "out/tutorial/src/systems/TaskSystem/controller"
+					},
+					"GameFlowSystem": {
+						"$path": "out/tutorial/src/systems/GameFlowSystem/controller"
+					},
+					"MusicSystem": {
+						"$path": "out/tutorial/src/systems/AudioSystem/MusicSystem/controller"
+					},
+					"SoundSystem": {
+						"$path": "out/tutorial/src/systems/AudioSystem/SoundSystem/controller"
+					},
+					"ProgressionSystem": {
+						"$className": "Folder",
+						"ElevationSystem": {
+							"$path": "out/tutorial/src/systems/ProgressionSystem/ElevationSystem/controller"
+						},
+						"ActivitySystem": {
+							"$path": "out/tutorial/src/systems/ProgressionSystem/ActivitySystem/controller"
+						}
+					},
+					"LevelSystem": {
+						"$path": "out/tutorial/src/systems/LevelSystem/controller"
+					},
+					"WeatherSystem": {
+						"$path": "out/tutorial/src/systems/EnvironmentSystem/TimeSystem/WeatherSystem/controller"
+					},
+					"ProfessionSystem": {
+						"$path": "out/tutorial/src/systems/ProfessionSystem/controller"
+					},
+					"MatchMakingSystem": {
+						"$path": "out/tutorial/src/systems/MatchMakingSystem/controller"
+					}
+				},
+				"SystemsComponents": {
+					"$className": "Folder",
+					"DialogueComponent": {
+						"$path": "out/tutorial/src/systems/NarrartiveSystem/DialogueSystem/components"
+					},
+					"NPCComponent": {
+						"$path": "out/tutorial/src/systems/NarrartiveSystem/CharacterSystem/NPCSystem/components"
+					},
+					"EventComponent": {
+						"$path": "out/tutorial/src/systems/LevelSystem/components"
+					},
+					"AIComponent": {
+						"$path": "out/tutorial/src/systems/AISystem/components"
+					}
+				}
+			}
+		},
+		"ReplicatedFirst": {
+			"$className": "ReplicatedFirst",
+			"$path": "out/tutorial/src/ui/prototype"
+		},
+		"Workspace": {
+			"$properties": {
+			  "FilteringEnabled": true
+			},
+			"TutorialNode": {
+				"$path": "../../assets/tutorialNode.rbxm"
+			}
+		  },
+		"ServerStorage": {
+			"ENEMY_AI": {
+				"$path": "../../assets/enemyAI.rbxm"
+			},
+			"LevelSegment": {
+				"$path": "../../assets/LevelSegment.rbxm"
+			}
+		},
+		"HttpService": {
+			"$className": "HttpService",
+			"$properties": {
+				"HttpEnabled": true
+			}
+		},
+		"SoundService": {
+			"$className": "SoundService",
+			"$properties": {
+				"RespectFilteringEnabled": true
+			}
+		},
+		"Lighting": {
+			"$className": "Lighting",
+			"Atmosphere": {
+				"$path": "../../assets/atmosphere.rbxm"
+			},
+			"Sky": {
+				"$path": "../../assets/sky.rbxm"
+			},
+			"BloomEffect": {
+				"$path": "../../assets/bloom.rbxm"
+			},
+			"DepthOfFieldEffect": {
+				"$path": "../../assets/depth-of-field.rbxm"
+			},
+			"SunRaysEffect": {
+				"$path": "../../assets/sun-ray.rbxm"
+			}
+		}
+	}
+}
