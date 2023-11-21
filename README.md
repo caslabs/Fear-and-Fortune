@@ -1,6 +1,6 @@
-# Fear and Fortune
+# Rapid Games Framework
 
-I'm excited to share with you my open-source game which serves not only as an example of my coding skills but also showcases an innovative game engine framework I've developed using TypeScript.
+I'm excited to share with you my open-source game which serves not only as an example of my coding skills but also showcases an innovative game engine framework. I've developed using TypeScript.
 
 ## Features:
 
